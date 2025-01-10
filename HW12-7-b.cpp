@@ -76,7 +76,7 @@ int main()
 
     cout <<"String: " << ms << endl;
 
-    computeLPS(ms, lpsarr);
+    computeLPS(ms, lpsarr);  //дополнительно считается и выводится тоолько для наглядности. 
     
     cout << "String.lenght(): " << ms.length() << endl;
     cout << "LPS Array: " << endl;

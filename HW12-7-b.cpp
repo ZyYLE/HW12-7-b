@@ -54,7 +54,7 @@ bool IsKPeriodic(unsigned k, string s)
     
     computeLPS(s, lpsarr);
   
-    // сумма K и последнего лпс=длине строки
+    // сумма K и последнего LPS =длине строки
     if (!((k + lpsarr[len - 1]) == len)&&result)
     {
         result = false;
@@ -70,7 +70,7 @@ int main()
 {
     
 
-    string ms = "ababababbabababa";
+    string ms = "abababac";
     int len = ms.length();
     int* lpsarr=new int[len];
 

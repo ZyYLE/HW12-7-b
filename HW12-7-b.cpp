@@ -1,4 +1,4 @@
-// HW12-7-b.cpp : This file contains the 'main' function. Program execution begins and ends there.
+п»ї// HW12-7-b.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 
@@ -42,19 +42,19 @@ bool IsKPeriodic(unsigned k, string s)
 
     bool result = false;
 
-    //Проверкм: (сначала низкобюджетные)
+    //РџСЂРѕРІРµСЂРєРј: (СЃРЅР°С‡Р°Р»Р° РЅРёР·РєРѕР±СЋРґР¶РµС‚РЅС‹Рµ)
     
-    // ненулевая входная  кратность
+    // РЅРµРЅСѓР»РµРІР°СЏ РІС…РѕРґРЅР°СЏ  РєСЂР°С‚РЅРѕСЃС‚СЊ
     if (k == 0) return false;
 
-    // остаток от деления длины строки на К должен быть 0 
+    // РѕСЃС‚Р°С‚РѕРє РѕС‚ РґРµР»РµРЅРёСЏ РґР»РёРЅС‹ СЃС‚СЂРѕРєРё РЅР° Рљ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ 0 
     if (!(len % k)) result = true; 
 
-    // теперь затратная проверка:
+    // С‚РµРїРµСЂСЊ Р·Р°С‚СЂР°С‚РЅР°СЏ РїСЂРѕРІРµСЂРєР°:
     
     computeLPS(s, lpsarr);
   
-    // сумма K и последнего LPS =длине строки
+    // СЃСѓРјРјР° K Рё РїРѕСЃР»РµРґРЅРµРіРѕ LPS =РґР»РёРЅРµ СЃС‚СЂРѕРєРё
     if (!((k + lpsarr[len - 1]) == len)&&result)
     {
         result = false;
@@ -76,7 +76,7 @@ int main()
 
     cout <<"String: " << ms << endl;
 
-    computeLPS(ms, lpsarr);  //дополнительно считается и выводится тоолько для наглядности. 
+    computeLPS(ms, lpsarr);  //РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕ СЃС‡РёС‚Р°РµС‚СЃСЏ Рё РІС‹РІРѕРґРёС‚СЃСЏ С‚РѕРѕР»СЊРєРѕ РґР»СЏ РЅР°РіР»СЏРґРЅРѕСЃС‚Рё. 
     
     cout << "String.lenght(): " << ms.length() << endl;
     cout << "LPS Array: " << endl;
